@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //Создайте массив размером n, элементами которого будут числа от n до 1
+        //Создайте массив размером n, элементами которого будут числа от n до 1 и выведите первые 5 элементов;
         Scanner scanner = new Scanner(System.in);//добавил ввод числа пользователем;
         int n;
         System.out.println("Введите значение n в консоль:");
@@ -19,5 +19,8 @@ public class Main {
             k=k-1;
         }
         System.out.println("наш массив: "+ Arrays.toString(array));//вывод массива;
+        for (int i=0; i<5; i++){
+            System.out.println(i+" элемент массива : " + array[i]);
+        }
     }
 }
